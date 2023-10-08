@@ -148,7 +148,7 @@ nav.sticky{
     height:508px;
     width:100%;
     /* max-width: 1200; */
-    background: url("banner.png");
+    background: url("images/banner.png");
 	/* background-position:top; */
 	font-family: sans-serif;
     background-size: cover;
@@ -259,7 +259,7 @@ nav.sticky{
   }
   
   .main-title {
-    font-size: 30px;
+    font-size: 48px;
     line-height: 100%;
     margin-bottom: 20px;
     font-weight: 600;
@@ -268,8 +268,8 @@ nav.sticky{
   }
   
   .paragraph-content {
-    font-size: 16px;
-    line-height: 170%;
+    font-size: 24px;
+    line-height: 160%;
     font-weight: 300;
     display: inline;
     cursor: text;
@@ -281,7 +281,7 @@ nav.sticky{
     border: none;
     background-color: #1e1e1e;
     color: #eee;
-    font-size: 16px;
+    font-size: 20px;
     position: relative;
     margin-top: 10px;
     font-weight: 600;
@@ -296,7 +296,7 @@ nav.sticky{
   .secondary-btn::after {
     content: "";
     display: block;
-    left: 120px;
+    left: 150px;
     position: absolute;
     top: 40%;
     width: 30%;
@@ -318,10 +318,10 @@ nav.sticky{
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width: 750px;
+    max-width: 1100px;
     background-color: #1e1e1e;
     color: #eee;
-    padding: 50px 40px 40px 40px;
+    padding: 50px 40px 40px 72px;
     margin-left: -80px;
     /* height: 500px; */
   }
@@ -330,8 +330,8 @@ nav.sticky{
     float: right;
     transform: translate(130px, -94px);
     width: auto;
-    height: 400px;
-    margin-left: -100px;
+    height: 544px;
+    margin-left: -58px;
     margin-bottom: -120px;
   }
   
@@ -363,7 +363,7 @@ nav.sticky{
     float: left;
     transform: translate(-25px, -90px);
     width: auto;
-    height: 400px;
+    height: 544px;
     margin-left: -100px;
     margin-bottom: -80px;
     position: relative;
@@ -377,10 +377,10 @@ nav.sticky{
     content: "Late Min Bahadur Shakya (left) Dr. Miroj Shakya (right)";
     background-color: #fff200;
     width: auto;
-    font-size: 12px;
+    font-size: 14px;
     position: absolute;
-    bottom: -280px;
-    left: -25px;
+    bottom: -422px;
+    left: 80px;
     padding: 5px;
     clear: both;
     height: auto;
@@ -394,12 +394,13 @@ nav.sticky{
     display: block;
     align-items: center;
     position: relative;
-    max-width: 750px;
+    max-width: 1100px;
     background-color: #1e1e1e;
     color: #eee;
     padding: 50px 40px 40px 40px;
-    margin-left: 110px;
+    margin-left: 85px;
   }
+  
   
   
   .footerbox{
