@@ -12,6 +12,7 @@ readMoreButtons.forEach(function (button) {
     paragraph.classList.toggle("show");
 
     if (paragraph.classList.contains("show")) {
+      container.style.paddingBottom = "40px";
       container.style.height = "auto"; // Expand container to fit content
       this.textContent = "Read Less";
     } else {
