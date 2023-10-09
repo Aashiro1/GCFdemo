@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .team-member {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .member-details {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .member-details img {
+    width:20%;
+    height: 100%;
+    /* width: 100px;
+    height: 100px;  */
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .text-details {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .team-member h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    margin-bottom: 10px;
+  }
+  
+  .team-member strong {
+    font-weight: bold;
+  }
+  
