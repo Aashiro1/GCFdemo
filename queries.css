@@ -1,0 +1,442 @@
+@media (max-width: 480px) {
+  .navbox {
+    height: 101px;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.5rem;
+  }
+
+  nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+    background: #fff;
+    height: auto;
+    transition: 0.2s ease-in;
+    z-index: 1000000;
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    height: 10px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nav-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-links .ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+  }
+
+  .ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    font-family: inter;
+    position: relative;
+  }
+  .ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #8b0304;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+    /* border:1px solid white; */
+  }
+  .ul li a:hover {
+    color: #000;
+    transition: 0.9s;
+    /* text-decoration:underline;
+    text-underline-offset: 10px; */
+  }
+  .ul li a:hover:after {
+    width: 100%;
+  }
+  .donate {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    background: #8b0304;
+    height: 38px;
+    padding: 8px 14px;
+    display: inline-block;
+  }
+  .donate a {
+    color: #fff;
+    font-family: inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .donate:hover {
+    background: #ec0c3c;
+  }
+
+  .search {
+    font-size: 27px;
+    color: #999;
+    flex-shrink: 0;
+    padding: 26px 3px;
+    /* margin-left: 26px; */
+  }
+
+  .search:hover {
+    color: black;
+    transition: 0.9s;
+  }
+
+  .sticky {
+    position: fixed;
+    animation: fadeInDown;
+    transition: 1s ease;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-1000px);
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .banner {
+    height: 100vh;
+    width: 100%;
+    background: url("images/banner.png");
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    /* margin: auto; */
+  }
+
+  .herogradient {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(217, 217, 217, 0), #747474);
+    mix-blend-mode: multiply;
+    position: absolute;
+    margin: auto;
+    top: 0;
+  }
+  .herocontainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    max-width: 100%;
+    padding: 25px;
+  }
+  .banner h1,
+  .banner .title-line-break {
+    width: auto;
+    color: #fff;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    /* display: inline-block; */
+  }
+
+  .title-line-break {
+    display: inline;
+  }
+
+  .herocontainer p {
+    width: 100%;
+    display: inline;
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 25.5px */
+    position: relative;
+  }
+  .banner p span {
+    color: #ed1846;
+    font-weight: 700;
+  }
+
+  .donate2 {
+    margin-top: 40px;
+  }
+
+  .dbtn {
+    border-radius: 4px;
+    position: relative;
+    padding: 10px 12px;
+    background-color: #fff200;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .donate2 .dbtn:hover {
+    box-shadow: 0 5px 15px rgba(255, 242, 0, 0.4);
+  }
+
+  .container {
+    max-width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title {
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .paragraph-content {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 300;
+    display: inline;
+    cursor: text;
+  }
+
+  .secondary-btn {
+    display: inline;
+    text-transform: uppercase;
+    border: none;
+    background-color: #1e1e1e;
+    color: #eee;
+    font-size: 16px;
+    position: relative;
+    margin-top: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .secondary-btn:focus {
+    outline: none;
+  }
+
+  .secondary-btn::after {
+    content: "";
+    display: block;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: -10px;
+    width: 50%;
+    height: 2px;
+    background-color: #fc0002;
+    transform: none;
+    transition: 0.2s ease;
+  }
+
+  .secondary-btn:hover {
+    text-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+  }
+  .secondary-btn:hover::after {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    width: 100%;
+  }
+  /*  ABOUT US CONTAINER */
+
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #1e1e1e;
+    color: #eee;
+    width: auto;
+    padding: 30px;
+    margin-left: 0;
+    text-align: center;
+    height: auto;
+  }
+  .about-us-image {
+    float: none;
+    width: auto;
+    height: 250px;
+    transform: none;
+    margin-top: -100px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .extra {
+    display: none;
+  }
+
+  .show {
+    display: inline;
+    text-align: center;
+  }
+
+  .center-div {
+    margin: auto;
+  }
+
+  .about-link {
+    color: #fc0002;
+    text-decoration: underline;
+  }
+
+  .about-link:hover {
+    color: #cd0305;
+    text-decoration: none;
+  }
+
+  /* Our Story */
+  .our-story-image {
+    float: none;
+    transform: none;
+    width: auto;
+    height: 250px;
+    margin-left: 0;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: -100px;
+    margin-bottom: 30px;
+  }
+
+  .img-container {
+    position: relative;
+  }
+
+  .img-container::after {
+    content: "Late Min Bahadur Shakya (left) Dr. Miroj Shakya (right)";
+    background-color: #fff200;
+    width: 220px;
+    font-size: 8px;
+    position: absolute;
+    bottom: 39px;
+    left: 8.5%;
+    padding: 5px;
+    clear: both;
+    height: auto;
+    color: #1e1e1e;
+    font-weight: 800;
+    left: 45%;
+    transform: translateX(-45%);
+  }
+
+  .our-story-container {
+    display: flex;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    position: relative;
+    max-width: auto;
+    height: 520px;
+    background-color: #1e1e1e;
+    color: #eee;
+    padding: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* ********************footer section************************ */
+  .footerbox {
+    width: 100%;
+    height: auto;
+    background: #1e1e1e;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerbox h2 {
+    height: auto;
+    /* width: 230px; */
+    position: relative;
+  }
+  .footercontent {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .social {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    gap: 10px;
+    justify-content: end;
+  }
+
+  .social i {
+    font-size: 27px;
+    color: #999;
+    flex-shrink: 0;
+    padding: 26px 3px;
+    /* margin-left: 26px; */
+  }
+  .social i:hover {
+    color: #eee;
+    transition: 0.3s;
+  }
+}

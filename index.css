@@ -4,50 +4,61 @@
   box-sizing: border-box;
   font-family: inter;
 }
+
+.navbox {
+  height: 101px;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5.5rem;
+}
+
 nav {
-  /* position: fixed; */
   top: 0;
-  bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-family: inter;
   background: #fff;
   height: 80px;
-  transition: 0.9s;
+  transition: 0.2s ease-in;
   z-index: 1000000;
-}
-.navbox {
-  width: 1169px;
-  height: 101px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .logo {
   display: flex;
   height: 10px;
-  width: 230px;
+  width: 200px;
   justify-content: center;
   align-items: center;
-  margin-right: 515px;
-  margin-bottom: 10px;
 }
 
-nav ul li {
-  display: inline-flex;
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links .ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   list-style: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  position: relative;
-  margin-right: 20px;
 }
 
-nav ul li a {
+.ul li a {
   color: #999;
   text-decoration: none;
   font-size: 15px;
@@ -57,8 +68,9 @@ nav ul li a {
   text-transform: uppercase;
   padding: 5px 5px;
   font-family: inter;
+  position: relative;
 }
-nav ul li a:after {
+.ul li a:after {
   content: "";
   position: absolute;
   background-color: #8b0304;
@@ -69,13 +81,13 @@ nav ul li a:after {
   transition: 0.4s;
   /* border:1px solid white; */
 }
-nav ul li a:hover {
+.ul li a:hover {
   color: #000;
   transition: 0.9s;
   /* text-decoration:underline;
 	text-underline-offset: 10px; */
 }
-nav ul li a:hover:after {
+.ul li a:hover:after {
   width: 100%;
 }
 .donate {
@@ -86,8 +98,6 @@ nav ul li a:hover:after {
   height: 38px;
   padding: 8px 14px;
   display: inline-block;
-  /* margin-left: 10px; */
-  margin-right: 20px;
 }
 .donate a {
   color: #fff;
@@ -116,46 +126,37 @@ nav ul li a:hover:after {
   transition: 0.9s;
 }
 
+.sticky {
+  position: fixed;
+  animation: fadeInDown;
+  transition: 1s ease;
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
+    transform: translateY(-1000px);
+  }
+
+  50% {
+    opacity: 0.5;
   }
 
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
-}
-
-nav.sticky {
-  position: sticky;
-  /* background-color: black; */
-  transition: 5s;
-  padding: 5px 100px;
-  animation: fadeInDown;
-  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
 }
 .banner {
   height: 508px;
   width: 100%;
-  /* max-width: 1200; */
   background: url("images/banner.png");
-  /* background-position:top; */
   font-family: sans-serif;
   background-size: cover;
   background-position: top;
-  /* z-index:1; */
   position: relative;
   margin: auto;
-  /* margin-top: 80px; */
-  /* display: flex;
-    justify-content: flex-start; */
-  /* align-items: center; */
 }
 .herogradient {
   height: 508px;
@@ -191,6 +192,10 @@ nav.sticky {
   position: relative;
 }
 
+.title-line-break {
+  display: block;
+}
+
 .banner p {
   width: 540px;
   margin-top: 20px;
@@ -207,7 +212,7 @@ nav.sticky {
   /* z-index:2; */
   position: relative;
 }
-.banner span {
+.banner p span {
   color: #ed1846;
   font-weight: 700;
 }
@@ -301,7 +306,7 @@ nav.sticky {
   display: block;
   left: 125px;
   position: absolute;
-  top: 40%;
+  bottom: 40%;
   width: 30%;
   height: 2px;
   background-color: #fc0002;
@@ -326,7 +331,7 @@ nav.sticky {
   color: #eee;
   padding: 80px 58px 100px 58px;
   margin-left: -58px;
-  height: 520px;
+  height: 550px;
 }
 
 .about-us-image {

@@ -148,7 +148,7 @@ nav.sticky {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 40px 100px 0 100px;
+  margin: 40px 100px 50px 100px;
 }
 
 .photocontainer .heading {
@@ -176,23 +176,24 @@ nav.sticky {
   font-weight: bolder;
 }
 
-.photocontainer .box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
   /* align-items: center; */
 }
 
-.photocontainer .box .dream {
-  display: flex;
-  flex-direction: column;
-  width: 49%;
+.img-container {
+  width: 600px;
+  height: 400px;
 }
 
-.photocontainer .box .dream img {
+.img-container img {
   width: 100%;
-  padding-bottom: 15px;
+  height: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 /* footer */

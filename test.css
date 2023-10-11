@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+  }
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 40px 0;
+  }
+  
+  .main-title {
+    font-size: 48px;
+    line-height: 100%;
+    margin-bottom: 30px;
+    margin-top: -35px;
+
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .paragraph-content {
+    font-size: 18px;
+    line-height: 170%;
+    font-weight: 500;
+    display: inline;
+    cursor: text;
+    color:#727375;
+
+  }
+.our-story-image {
+    /* float: left; */
+    transform: translate(-170px, -263px);
+    width: auto;
+    height: 544px;
+    margin-left: -100px;
+    margin-bottom: -170px;
+    position: relative;
+  }
+  
+ 
+  
+  .our-story-container {
+    display: flex;
+    justify-content: center;
+    /* display: block; */
+    align-items: center;
+    position: relative;
+    max-width: 1092px;
+    height: auto;
+    background-color: #e6e7e9;
+    color: #070000;
+    padding: 80px 58px 50px 58px;
+    margin-left: 46px;
+  }
+
+  .description-container{
+    display: flex;
+    gap: 30px;
+    
+  }
+  .about{
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: inline;
+  }
+
+  .about::after{
+    content: "";
+    /* color: #000; */
+    background-color: #727375 ;
+    height: 300px;
+    width:1px;
+    bottom: 70px;
+    left: 50%;
+    position: absolute;
+
+  }
+  .member-name{
+    content: "Dr. Miroj Shakya";
+    background-color: #ffb017;
+    width: auto;
+    font-size: 50px;
+    margin-left: -47%;
+    bottom: 40px;
+    left: 290px;
+    padding: 5px 80px;
+    clear: both;
+    height: auto;
+    color: #070000;
+    font-weight: 600;
+    position: relative;
+    z-index: 999999999;
+    display: inline;
+    margin-bottom: 69%;
+  }
+  .main-text-container{
+    margin-left: -14%;
+  }

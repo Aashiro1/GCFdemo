@@ -1,70 +1,92 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>GCF</title>
-    <link rel="stylesheet" href="photo.css">
-    <script src="https://kit.fontawesome.com/29759f2729.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="photo.css" />
+    <link rel="stylesheet" href="photosqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/29759f2729.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav>
-        <div class="navbox">
-               <h2><a href="index.html" class="logo"><img src="images/gcflogo.svg" alt=""></a></h2>
-                <ul class="ul">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Photos</a></li>
-                    <li><a href="#">Members</a></li>
-                </ul>
-                    <div class="donate">
-                    <h2><a href="https://www.paypal.com/paypalme/Greatcompassionfund">Donate</a></h2>
-                    </div>
-                    <i class="fa-solid fa-magnifying-glass search"></i>
-                
-            </div>
+      <div class="navbox">
+        <h2>
+          <a href="index.html" class="logo"
+            ><img src="images/gcflogo.svg" alt=""
+          /></a>
+        </h2>
+        <ul class="ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Members</a></li>
+        </ul>
+        <div class="donate">
+          <h2>
+            <a href="https://www.paypal.com/paypalme/Greatcompassionfund"
+              >Donate</a
+            >
+          </h2>
+        </div>
+        <i class="fa-solid fa-magnifying-glass search"></i>
+      </div>
     </nav>
     <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("sticky",window.scrollY > 300);
-           
-        })
-       </script> 
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 300);
+      });
+    </script>
 
     <div class="photocontainer">
-        <div class="heading">
-            <p>We are proud to see happy faces all around!</p>
-            <h3>Our <span>Gallery</span></h3>
+      <div class="heading">
+        <p>We are proud to see happy faces all around!</p>
+        <h3>Our <span>Gallery</span></h3>
+      </div>
+      <div class="box">
+        <div class="img-container">
+          <img src="images/1.jpeg" />
         </div>
-        <div class="box">
-            <div class="dream">
-                <img src="images/1.jpeg">
-                <img src="images/2.jpeg">
-                <img src="images/3.jpeg">
-            </div> 
-            <div class="dream">
-                <img src="images/4.jpg">
-                <img src="images/5.jpg">
-                <!-- <img src="images/5.jpg"> -->
-            </div>
+        <div class="img-container">
+          <img src="images/2.jpeg" />
         </div>
+        <div class="img-container">
+          <img src="images/3.jpeg" />
+        </div>
+        <div class="img-container">
+          <img src="images/4.jpg" />
+        </div>
+        <div class="img-container">
+          <img src="images/5.jpg" />
+        </div>
+
+        <!-- <img src="images/5.jpg"> -->
+      </div>
     </div>
 
     <footer>
-        <div class="footerbox">
-            <h2><a href="#"><img src="images/footerlogo.svg"></a></h2>
-            <div class="footercontent">
-            <p>COPYRIGHT ©2023. ALL RIGHTS RESERVED.</p>
-            <p>Email:greatcompassionfund@gmail.com</p>
-            </div>
-            <div class="social">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            </div>
+      <div class="footerbox">
+        <h2>
+          <a href="#"><img src="images/footerlogo.svg" /></a>
+        </h2>
+        <div class="footercontent">
+          <p>COPYRIGHT ©2023. ALL RIGHTS RESERVED.</p>
+          <p>Email:greatcompassionfund@gmail.com</p>
         </div>
-      </footer>
-</body>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
