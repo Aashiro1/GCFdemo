@@ -190,6 +190,7 @@
   .our-story-container {
     display: flex;
     justify-content: center;
+    /* flex-direction: row-reverse; */
     /* display: block; */
     align-items: center;
     position: relative;
