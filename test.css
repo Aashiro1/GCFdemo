@@ -4,6 +4,149 @@
     box-sizing: border-box;
     font-family: montserrat;
   }
+  .navbox {
+    height: 101px;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.5rem;
+  }
+  
+  nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+    background: #fff;
+    height: 80px;
+    transition: 0.2s ease-in;
+    z-index: 1000000;
+  }
+  
+  .logo {
+    display: flex;
+    height: 10px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .nav-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links .ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    font-family: inter;
+    position: relative;
+  }
+  .ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #8b0304;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+    /* border:1px solid white; */
+  }
+  .ul li a:hover {
+    color: #000;
+    transition: 0.9s;
+    /* text-decoration:underline;
+      text-underline-offset: 10px; */
+  }
+  .ul li a:hover:after {
+    width: 100%;
+  }
+  .donate {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0);
+  
+    background: #8b0304;
+    height: 38px;
+    padding: 8px 14px;
+    display: inline-block;
+  }
+  .donate a {
+    color: #fff;
+    font-family: inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .donate:hover {
+    background: #ec0c3c;
+  }
+  
+  .search {
+    font-size: 27px;
+    color: #999;
+    flex-shrink: 0;
+    padding: 26px 3px;
+    /* margin-left: 26px; */
+  }
+  
+  .search:hover {
+    color: black;
+    transition: 0.9s;
+  }
+  
+  .sticky {
+    position: fixed;
+    animation: fadeInDown;
+    transition: 1s ease;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-1000px);
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   .container {
     max-width: 1300px;
     margin: auto;
@@ -104,4 +247,7 @@
   }
   .main-text-container{
     margin-left: -14%;
+  }
+  .center-div{
+    margin-left: 173;
   }
