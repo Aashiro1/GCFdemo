@@ -1,3 +1,38 @@
+// Nav sticky while scrolling
+
+window.addEventListener("scroll", function () {
+  var nav = document.querySelector("nav");
+
+  nav.classList.toggle("sticky", window.scrollY > 300);
+});
+
+// burger
+const burgerMenu = document.querySelector(".burger-menu");
+const navLinks = document.querySelector(".nav-links");
+
+// Function to hide the menu
+function hideMenu() {
+  navLinks.classList.remove("active");
+  burgerMenu.classList.remove("active");
+}
+
+// Toggle menu on burger menu click
+burgerMenu.addEventListener("click", function () {
+  navLinks.classList.toggle("active");
+  burgerMenu.classList.toggle("active");
+});
+
+const navLinksContainer = document.querySelector(".ul");
+const links = navLinksContainer.querySelectorAll("li");
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    hideMenu();
+  });
+});
+
+// readmore btn
+
 const readMoreButtons = document.querySelectorAll(".secondary-btn");
 
 readMoreButtons.forEach(function (button) {
