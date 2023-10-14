@@ -306,7 +306,7 @@
   }
 .our-story-image-even {
     /* float: left; */
-    transform: translate(209px, -227px);
+    transform: translate(222px, -227px);
     width: auto;
     height: 406px;
     margin-left: -265px;
@@ -329,7 +329,7 @@
     background-color: #e6e7e9;
     color: #070000;
     padding: 80px 58px 50px 58px;
-    margin-left: 115px;
+    margin-left: 90px;
   }
 
   .description-container-even{
@@ -359,14 +359,14 @@
 
   }
   .member-name-even{
-    content: "Dr. Miroj Shakya";
+    content: "Ven. Sirinanda Unaleeye";
     background-color: #ffb017;
     width: auto;
     font-size: 50px;
     margin-left: -47%;
-    bottom: 49px;
-    left: 331px;
-    padding: 5px 80px;
+    bottom: 51px;
+    left: 344px;
+    padding: 5px 65px 5px 115px;
     clear: both;
     height: auto;
     color: #fefefe;
@@ -383,6 +383,68 @@
     margin-left: -245;
   }
 
+  .yin-image{
+    /* float: left; */
+    transform: translate(-119px, -140px);
+    width: auto;
+    height: 406px;
+    margin-left: -100px;
+    margin-bottom: -170px;
+    position: relative;
+  }
+  .about-szu{
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: inline;
+  }
+  .about-szu::after{
+
+  }
+  .dn-image{
+    transform: translate(222px, -140px);
+    width: auto;
+    height: 406px;
+    margin-left: -265px;
+    margin-bottom: -170px;
+    position: relative;
+
+  }
+  .dn-name{
+    content: "Dinesh Shakya";
+    background-color: #ffb017;
+    width: auto;
+    font-size: 50px;
+    margin-left: -47%;
+    bottom: 51px;
+    left: 635px;
+    padding: 5px 70px;
+    /* padding: 5px 65px 5px 115px; */
+    clear: both;
+    height: auto;
+    color: #fefefe;
+    font-weight: 600;
+    position: relative;
+    z-index: 999;
+    display: inline;
+    margin-bottom: 69%;
+  }
+  .about-dn{
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: inline;
+  }
+
+  .about-dn::after{
+
+  }
   /* ********************footer section************************ */
 .footerbox {
   width: 100%;
