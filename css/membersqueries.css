@@ -1,0 +1,293 @@
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+  }
+
+  .ribbon {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    margin-top: 40px;
+    background: #ffb017;
+    justify-content: center;
+  }
+  .ribbon p {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fefefe;
+  }
+  .container {
+    max-width: auto;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .main-title {
+    font-size: 25px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    margin-top: -23px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    color: #727375;
+  }
+
+  .paragraph-content {
+    font-size: 16px;
+    line-height: 170%;
+    font-weight: 500;
+    display: inline;
+    cursor: text;
+    color: #727375;
+  }
+  .our-story-image {
+    transform: none;
+    width: auto;
+    height: 406px;
+    margin-left: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .our-story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 999px;
+    height: auto;
+    background-color: #e6e7e9;
+    color: #070000;
+    padding: 26px 0;
+    margin-left: 0;
+  }
+
+  .description-container {
+    display: flex;
+    gap: 30px;
+  }
+  .about {
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: none;
+  }
+
+  .about::after {
+    content: "";
+    background-color: #727375;
+    height: 270px;
+    width: 1px;
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+  }
+  .member-name {
+    content: "Dr. Miroj Shakya";
+    background-color: #ffb017;
+    max-width: 323.984px;
+    font-size: 30px;
+    margin-left: 0;
+    bottom: 47px;
+    left: 0;
+    padding: 5px;
+    clear: both;
+    height: auto;
+    color: #fefefe;
+    font-weight: 600;
+    position: relative;
+    z-index: 99999;
+    display: inline;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .main-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    padding: 0 26px;
+  }
+  .center-div {
+    margin-left: 0;
+  }
+
+  /* even container */
+
+  .container-even {
+    width: auto;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .main-title-even {
+    font-size: 25px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    margin-top: -14px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    color: #727375;
+  }
+
+  .paragraph-content-even {
+    font-size: 16px;
+    line-height: 170%;
+    font-weight: 500;
+    display: inline;
+    cursor: text;
+    color: #727375;
+  }
+  .our-story-image-even {
+    transform: none;
+    width: auto;
+    height: 406px;
+    margin-left: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .our-story-container-even {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 999px;
+    height: auto;
+    background-color: #e6e7e9;
+    color: #070000;
+    padding: 26px 0;
+    margin-left: 0;
+  }
+
+  .description-container-even {
+    display: flex;
+    gap: 30px;
+  }
+  .about-even {
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: none;
+  }
+
+  .about-even::after {
+    content: "";
+    background-color: #727375;
+    height: 208px;
+    width: 1px;
+    bottom: 11px;
+    left: 50%;
+    position: absolute;
+  }
+  .member-name-even {
+    background-color: #ffb017;
+    max-width: 323.984px;
+    font-size: 20px;
+    margin-left: 0;
+    bottom: 34px;
+    left: 0;
+    padding: 5px;
+    clear: both;
+    height: auto;
+    color: #fefefe;
+    font-weight: 600;
+    position: relative;
+    z-index: 99999;
+    display: inline;
+    margin-bottom: 0;
+  }
+  .main-text-container-even {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    padding: 0 26px;
+  }
+  .center-div-even {
+    margin-left: 0;
+  }
+
+  /* yin */
+
+  .yin-image {
+    transform: none;
+    width: auto;
+    height: 406px;
+    margin-left: 0;
+    margin-bottom: -0;
+    position: relative;
+  }
+  .about-szu {
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: none;
+  }
+
+  .dn-image {
+    transform: none;
+    max-width: 323.984px;
+    height: 406px;
+    margin-left: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .dn-name {
+    content: "Dinesh Shakya";
+    background-color: #ffb017;
+    width: auto;
+    font-size: 25px;
+    margin-left: 0;
+    bottom: 40px;
+    left: 0;
+    padding: 5px;
+    clear: both;
+    height: auto;
+    color: #fefefe;
+    font-weight: 600;
+    position: relative;
+    z-index: 999;
+    display: inline;
+    margin-bottom: 0;
+  }
+  .about-dn {
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: none;
+  }
+}

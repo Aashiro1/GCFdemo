@@ -1,4 +1,10 @@
 /* Burger menu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
 .burger-menu {
   display: none;
   cursor: pointer;
@@ -17,8 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5.5rem;
-  /* margin: auto; */
+  padding: 0 6rem;
   max-width: 1350px;
 }
 
@@ -28,7 +33,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: inter;
   background: #fff;
   height: 80px;
   transition: 0.2s ease-in;
@@ -74,7 +78,6 @@ nav {
   line-height: normal;
   text-transform: uppercase;
   padding: 5px 5px;
-  font-family: inter;
   position: relative;
 }
 .ul li a:after {
@@ -86,21 +89,24 @@ nav {
   left: 0;
   bottom: -10px;
   transition: 0.4s;
-  /* border:1px solid white; */
 }
 .ul li a:hover {
   color: #000;
   transition: 0.9s;
-  /* text-decoration:underline;
-	text-underline-offset: 10px; */
 }
 .ul li a:hover:after {
   width: 100%;
 }
+
+.nav-link.active {
+  color: black;
+  font-weight: 600;
+}
+
 .donate {
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0);
-
+  cursor: pointer;
   background: #8b0304;
   height: 38px;
   padding: 8px 14px;
@@ -108,7 +114,6 @@ nav {
 }
 .donate a {
   color: #fff;
-  font-family: inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -125,7 +130,6 @@ nav {
   color: #999;
   flex-shrink: 0;
   padding: 26px 3px;
-  /* margin-left: 26px; */
 }
 
 .search:hover {
@@ -163,7 +167,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: inter;
     background: #fff;
     height: 80px;
     transition: 0.2s ease-in;
@@ -217,7 +220,6 @@ nav {
     line-height: normal;
     text-transform: uppercase;
     padding: 5px 5px;
-    font-family: inter;
     position: relative;
   }
   .ul li a:after {
@@ -229,13 +231,10 @@ nav {
     left: 0;
     bottom: -10px;
     transition: 0.4s;
-    /* border:1px solid white; */
   }
   .ul li a:hover {
     color: #000;
     transition: 0.9s;
-    /* text-decoration:underline;
-	text-underline-offset: 10px; */
   }
   .ul li a:hover:after {
     width: 100%;
@@ -251,7 +250,6 @@ nav {
   }
   .donate a {
     color: #fff;
-    font-family: inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -268,7 +266,6 @@ nav {
     color: #999;
     flex-shrink: 0;
     padding: 26px 3px;
-    /* margin-left: 26px; */
   }
 
   .search:hover {
@@ -276,31 +273,35 @@ nav {
     transition: 0.9s;
   }
 
-  /* sdghfdgdsjgdjgfsja;fj;safjf;l */
-
   .burger-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 20px;
     width: 25px;
-
+    transition: all 0.5s ease;
     z-index: 9999999999;
   }
 
-  .burger-menu {
-    transition: all 0.2s ease;
+  .burger-menu.activate {
+    transform: rotate(90deg);
+  }
+
+  .nav-links.activate {
+    height: 100vh;
+    display: flex;
+    opacity: 1;
   }
 
   .burger-menu .fa-times {
     display: none;
   }
 
-  .burger-menu.active .fa-bars {
+  .burger-menu.activate .fa-bars {
     display: none;
   }
 
-  .burger-menu.active .fa-times {
+  .burger-menu.activate .fa-times {
     display: block;
   }
 
@@ -318,6 +319,8 @@ nav {
     background-color: #eee;
     box-shadow: 0 2.4px 4.8px rgba(0, 0, 0, 0.075);
     padding: 1rem;
+    opacity: 0;
+    transition: height 0.5s ease, display 0.3s ease, opacity 0.5s ease;
     z-index: 999999999;
   }
 
@@ -337,10 +340,6 @@ nav {
     list-style: none;
   }
 
-  .nav-links.active {
-    display: flex;
-  }
-
   .nav-links ul {
     flex-direction: column;
     gap: 0.5rem;
@@ -356,8 +355,6 @@ nav {
   }
   nav.sticky {
     position: fixed;
-    /* background-color: black; */
-    /* padding: 5px 100px; */
     animation: fadeInDown 0.5s ease;
     box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   }
