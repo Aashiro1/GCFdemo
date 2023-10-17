@@ -77,7 +77,7 @@ body {
   padding: 12px 24px;
   background-color: #fff200;
   color: #1e1e1e;
-  font-family: montserrat;
+  font-family: inter;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -210,11 +210,11 @@ body {
 }
 
 /* Our Mission */
-.mission-container {
+.mission-container{
   padding: 120px 0;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.623) 100%,
+      rgba(0, 0, 0, 0.523) 100%,
       rgba(255, 255, 255, 0)
     ),
     url(../images/3.jpeg);
@@ -223,8 +223,17 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
+  transition: all 0.4s ease-out;
+  filter: grayscale(100%);
 }
-
+.mission-container:hover{
+  transition: all 0.4s ease;
+  filter: grayscale(0);
+}
+.mission-container:hover::after{
+  transition: all 0.4s ease-out;
+  filter: grayscale(100%);
+}
 .mission-div {
   width: 100%;
   max-width: 1100px;
@@ -235,6 +244,7 @@ body {
   flex-direction: column;
   gap: 15px;
   padding: 20px;
+  
 }
 
 .mission-heading {
@@ -272,10 +282,6 @@ body {
 }
 
 .our-story-container {
-  /* display: flex; */
-  justify-content: center;
-  display: block;
-  align-items: center;
   position: relative;
   max-width: 1092px;
   height: 520px;

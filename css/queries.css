@@ -219,6 +219,7 @@
 
   .img-container {
     position: relative;
+    align-self: center;
   }
 
   .img-container::after {
