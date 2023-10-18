@@ -47,6 +47,7 @@ readMoreButtons.forEach(function (button) {
     if (paragraph.classList.contains("show")) {
       container.style.paddingBottom = "40px";
       container.style.height = "auto";
+
       this.textContent = "Read Less";
     } else {
       container.style.height = "520px";

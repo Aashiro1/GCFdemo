@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .banner {
     height: auto;
     width: 100%;
@@ -91,6 +91,7 @@
     margin-bottom: 15px;
     font-weight: 600;
     text-transform: uppercase;
+    align-self: flex-start;
   }
 
   .paragraph-content {
@@ -99,6 +100,7 @@
     font-weight: 300;
     display: inline;
     cursor: text;
+    align-self: flex-start;
   }
 
   .secondary-btn {
@@ -113,6 +115,7 @@
     font-weight: 600;
     cursor: pointer;
     outline: none;
+    align-self: flex-start;
   }
 
   .secondary-btn:focus {
@@ -206,26 +209,23 @@
   /* Our Story */
   .our-story-image {
     float: none;
-    transform: none;
     width: auto;
     height: 250px;
+    transform: none;
+    margin-top: -155px;
     margin-left: 0;
-    margin-bottom: 0;
-    position: relative;
-    margin-top: -100px;
     margin-bottom: 30px;
     align-self: center;
   }
 
   .img-container {
     position: relative;
-    align-self: center;
   }
 
   .img-container::after {
     content: "Late Min Bahadur Shakya (left) Dr. Miroj Shakya (right)";
     background-color: #fff200;
-    width: 220px;
+    width: 90%;
     font-size: 8px;
     position: absolute;
     bottom: 39px;
@@ -242,7 +242,7 @@
   .our-story-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     position: relative;
     max-width: auto;
@@ -252,5 +252,295 @@
     padding: 30px;
     margin-left: 0;
     text-align: left;
+  }
+}
+
+/* 1080 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 508px;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.808) 38.58%,
+        rgba(217, 217, 217, 0) 83.16%
+      ),
+      url("../images/banner.png");
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin: auto;
+  }
+
+  .herocontainer {
+    max-width: 900px;
+    margin: auto;
+    padding: 90px 35px;
+  }
+  .banner h1 {
+    flex-shrink: 0;
+    color: #fefefe;
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    animation: fadeInUpAnimation 0.5s ease forwards 0.8s;
+  }
+
+  .title-line-break {
+    display: block;
+  }
+
+  .banner p {
+    width: 540px;
+    margin-top: 20px;
+    flex-shrink: 0;
+    color: #fefefe;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 25.5px */
+    animation: fadeInUpAnimation 1s ease forwards 0.8s;
+    position: relative;
+  }
+  .banner p span {
+    color: #ed1846;
+    font-weight: 700;
+  }
+
+  .donate2 {
+    margin-top: 40px;
+    animation: fadeInUpAnimation 1.5s ease forwards 0.8s;
+  }
+
+  .dbtn {
+    flex-shrink: 0;
+    border-radius: 4px;
+    position: relative;
+    padding: 12px 24px;
+    background-color: #fff200;
+    color: #1e1e1e;
+    font-family: montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .donate2 .dbtn:hover {
+    box-shadow: 0 5px 15px rgba(255, 242, 0, 0.4);
+  }
+
+  @keyframes fadeInUpAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* ***************************** about us ************************************** */
+
+  .container {
+    max-width: 900px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0 20px 0;
+  }
+
+  .main-title {
+    font-size: 42px;
+    line-height: 100%;
+    margin-bottom: 30px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+  }
+
+  .paragraph-content {
+    font-size: 18px;
+    line-height: 170%;
+    font-weight: 300;
+    display: inline;
+    cursor: text;
+  }
+
+  .secondary-btn {
+    display: block;
+    text-transform: uppercase;
+    border: none;
+    background-color: #1e1e1e;
+    color: #eee;
+    font-size: 16px;
+    position: relative;
+    margin-top: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .secondary-btn:focus {
+    outline: none;
+  }
+
+  .secondary-btn::after {
+    content: "";
+    display: block;
+    left: 125px;
+    position: absolute;
+    bottom: 40%;
+    width: 30%;
+    height: 2px;
+    background-color: #fc0002;
+    transform: translate(-60%);
+  }
+
+  .secondary-btn:hover {
+    text-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+  }
+  .secondary-btn:hover::after {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+  }
+
+  /*  ABOUT US CONTAINER */
+
+  .about-us-container {
+    position: relative;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    color: #eee;
+    padding: 80px 58px 100px 58px;
+    margin-left: -58px;
+    height: 550px;
+  }
+
+  .about-us-image {
+    float: right;
+    transform: translate(130px, -150px);
+    width: auto;
+    height: 400px;
+    margin-left: -58px;
+    margin-bottom: -120px;
+  }
+
+  .extra {
+    display: none;
+  }
+
+  .show {
+    display: inline;
+    text-align: justify;
+  }
+
+  .center-div {
+    margin: auto;
+  }
+
+  .about-link {
+    color: #fc0002;
+    text-decoration: underline;
+  }
+
+  .about-link:hover {
+    color: #cd0305;
+    text-decoration: none;
+  }
+
+  /* Our Mission */
+  .mission-container {
+    padding: 120px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.548) 100%,
+        rgba(255, 255, 255, 0)
+      ),
+      url(../images/3.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .mission-container:hover {
+    filter: grayscale(1);
+  }
+
+  .mission-div {
+    width: 100%;
+    max-width: 800px;
+    color: #eee;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .mission-heading {
+    font-size: 42px;
+  }
+
+  /* Our Story */
+  .our-story-image {
+    float: left;
+    transform: translate(-25px, -124px);
+    width: auto;
+    height: 450px;
+    margin-left: -79px;
+    margin-bottom: -137px;
+    position: relative;
+  }
+
+  .img-container {
+    position: relative;
+  }
+
+  .img-container::after {
+    content: "Late Min Bahadur Shakya (left) Dr. Miroj Shakya (right)";
+    background-color: #fff200;
+    width: auto;
+    font-size: 14px;
+    position: absolute;
+    bottom: -297px;
+    left: -10px;
+    padding: 5px;
+    clear: both;
+    height: auto;
+    color: #1e1e1e;
+    font-weight: 800;
+  }
+
+  .our-story-container {
+    justify-content: center;
+    display: block;
+    align-items: center;
+    position: relative;
+    width: 800px;
+    height: 520px;
+    background-color: #1e1e1e;
+    color: #eee;
+    padding: 80px 58px 100px 58px;
+    margin-left: 46px;
+  }
+
+  .section {
+    transition: transform 1s, opacity 1s, filter 0.5s ease-in-out;
+  }
+
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
   }
 }

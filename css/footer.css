@@ -7,15 +7,13 @@
 
 .footerbox {
   width: 100%;
-  height: 138px;
+  height: 128px;
   background: #1e1e1e;
   margin: 0 auto;
   margin-top: 10px;
-  display: flex;
+
   flex-wrap: wrap;
   padding: 30px 20px;
-  justify-content: center;
-  align-items: center;
 }
 .footerbox h2 {
   height: auto;
@@ -26,9 +24,8 @@
   display: flex;
   text-align: center;
   flex-direction: column;
-  color: #fefefe;
+  color: #fff;
   text-decoration: none;
-
 }
 .social {
   display: flex;
@@ -51,14 +48,15 @@
 }
 
 .footer-container {
-  max-width: 1160px;
+  max-width: 1350px;
+  margin: auto;
   display: flex;
-  gap: 230px;
+  justify-content: space-around;
   align-items: center;
 }
 /* Responsive */
 /* ********************footer section************************ */
-@media (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .footerbox {
     width: 100%;
     height: auto;
@@ -91,7 +89,7 @@
     flex-direction: column;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 10px;
   }
   .social {
     display: flex;
@@ -110,5 +108,63 @@
   .social i:hover {
     color: #eee;
     transition: 0.3s;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footerbox {
+    width: 100%;
+    height: 128px;
+    background: #1e1e1e;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerbox h2 {
+    width: 150px;
+  }
+
+  .footerbox h2 a img {
+    height: auto;
+    width: 150px;
+    position: relative;
+  }
+  .footercontent {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+  }
+  .social {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    gap: 10px;
+    justify-content: end;
+  }
+
+  .social i {
+    font-size: 27px;
+    color: #999;
+    flex-shrink: 0;
+    padding: 26px 3px;
+    /* margin-left: 26px; */
+  }
+  .social i:hover {
+    color: #eee;
+    transition: 0.3s;
+  }
+
+  .footer-container {
+    max-width: 100%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
   }
 }
