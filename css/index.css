@@ -41,6 +41,7 @@ body {
   text-transform: uppercase;
   position: relative;
   animation: fadeInUpAnimation 0.5s ease forwards 0.8s;
+  opacity: 0;
 }
 
 .title-line-break {
@@ -59,6 +60,7 @@ body {
   line-height: 150%; /* 25.5px */
   animation: fadeInUpAnimation 1s ease forwards 0.8s;
   position: relative;
+  opacity: 0;
 }
 .banner p span {
   color: #ed1846;
@@ -68,6 +70,7 @@ body {
 .donate2 {
   margin-top: 40px;
   animation: fadeInUpAnimation 1.5s ease forwards 0.8s;
+  opacity: 0;
 }
 
 .dbtn {
