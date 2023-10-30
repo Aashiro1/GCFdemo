@@ -45,8 +45,15 @@
   cursor: text;
   color: #727375;
 }
+.paragraph-content a{
+  text-decoration: none;
+  color: #727375;
+}
+.paragraph-content a:hover{
+  text-decoration: underline;
+}
 .our-story-image {
-  transform: translate(-119px, -253px);
+  transform: translate(-119px, -283px);
   width: auto;
   height: 406px;
   margin-left: -100px;
@@ -83,7 +90,7 @@
 .about::after {
   content: "";
   background-color: #727375;
-  height: 270px;
+  height: 320px;
   width: 1px;
   bottom: 10px;
   left: 50%;
@@ -96,7 +103,7 @@
   font-size: 50px;
   margin-left: -47%;
   bottom: 51px;
-  left: 277px;
+  left: 279px;
   padding: 5px 70px;
   clear: both;
   height: auto;
