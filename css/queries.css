@@ -76,23 +76,17 @@
   .donate2 .dbtn:hover {
     box-shadow: 0 5px 15px rgba(255, 242, 0, 0.4);
   }
-  .ribbon {
+  /* .ribbon {
     display: flex;
     height: auto;
     max-width: 100%;
     padding: 20px 20px;
     /* padding-bottom: 20px; */
-    background: #ffb017;
+    /* background: #ffb017;
     justify-content: center;
-  }
+  } */ 
   .ribbon h1 {
     font-size: 12px;
-    font-weight: 500;
-  
-    /* text-transform: uppercase; */
-    color: #8b0304;
-  
-    text-align: center;
   }
   .container {
     max-width: auto;
@@ -353,6 +347,10 @@
   }
   .donate2 .dbtn:hover {
     box-shadow: 0 5px 15px rgba(255, 242, 0, 0.4);
+  }
+  
+  .ribbon h1 {
+    font-size: 12px;
   }
 
   @keyframes fadeInUpAnimation {
