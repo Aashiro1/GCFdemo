@@ -87,6 +87,9 @@
   } */ 
   .ribbon h1 {
     font-size: 12px;
+    text-align: justify;
+    display: inline;
+    color: #000;
   }
   .container {
     max-width: auto;
@@ -348,9 +351,12 @@
   .donate2 .dbtn:hover {
     box-shadow: 0 5px 15px rgba(255, 242, 0, 0.4);
   }
-  
+
   .ribbon h1 {
     font-size: 12px;
+    text-align: justify;
+    display: inline;
+    color: #000;
   }
 
   @keyframes fadeInUpAnimation {
