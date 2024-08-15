@@ -92,7 +92,7 @@ body {
   box-shadow: 0 5px 15px rgba(255, 242, 0, 0.4);
 }
 
-.ribbon {
+.ribbon{
   display: flex;
   height: auto;
   max-width: 100%;
@@ -100,15 +100,13 @@ body {
   padding-bottom: 20px;
    background: #ffb017; 
   justify-content: center;
-  /* width: 100%; */
 }
+
 .ribbon h1 {
   font-size: 18px;
   font-weight: 500;
   max-width: 1100px;
-  /* text-transform: uppercase; */
   color: #8b0304;
-
   text-align: center;
 }
 
