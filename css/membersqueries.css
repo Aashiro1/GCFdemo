@@ -290,6 +290,26 @@
     position: relative;
     display: none;
   }
+  .about-m {
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: none;
+  }
+  
+  .about-m::after {
+    content: "";
+    background-color: #727375;
+    height: 270px;
+    width: 1px;
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+  }
+  
 }
 
 /* 1080 */
@@ -555,6 +575,26 @@
     position: relative;
     display: inline;
   }
+  .about-m {
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    padding-top: 15px;
+    color: #727375;
+    font-size: 20px;
+    position: relative;
+    display: none;
+  }
+  
+  .about-m::after {
+    content: "";
+    background-color: #727375;
+    height: 270px;
+    width: 1px;
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+  }
+  
 
   .section {
     transition: transform 1s, opacity 1s;

@@ -274,7 +274,40 @@
   position: relative;
   display: inline;
 }
-
+.m-image{
+  transform: translate(-119px, -343px);
+  width: auto;
+  height: 406px;
+  margin-left: -100px;
+  margin-bottom: -170px;
+  position: relative;
+}
+.m-title{
+  font-size: 35px;
+  line-height: 100%;
+  margin-bottom: 20px;
+  margin-top: -40px;
+  font-weight: 600;
+  text-transform: none;
+}
+.about-m{
+  writing-mode: vertical-lr;
+  letter-spacing: 10px;
+  padding-top: 15px;
+  color: #727375;
+  font-size: 20px;
+  position: relative;
+  display: inline; 
+}
+.about-m::after {
+  content: "";
+  background-color: #727375;
+  height: 390px;
+  width: 1px;
+  bottom: 10px;
+  left: 50%;
+  position: absolute;
+}
 .section {
   transition: transform 1s, opacity 1s;
 }
