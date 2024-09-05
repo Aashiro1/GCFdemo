@@ -1,0 +1,1 @@
+The Great Compassion Fund Non-Profit empowers and supports underprivileged communities in Nepal. Our goal is to eliminate poverty, improve living conditions, and foster sustainable progress. Guided by Buddhist principles of empathy and compassion, we engage practitioners and supporters to alleviate suffering and make a positive impact on lives in need
