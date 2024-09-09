@@ -1,0 +1,92 @@
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 70px;
+}
+
+.Activities-text-contents {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-title {
+  font-size: 32px;
+  color: #8b0304;
+}
+
+.content-description {
+  font-size: 18px;
+  line-height: 150%;
+  padding: 20px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.content-images-container {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.content-image {
+  height: 230px;
+  width: 360px;
+  object-fit: cover;
+}
+
+.contents {
+  padding-bottom: 40px;
+  border-bottom: 1px solid lightGray;
+  margin-bottom: 60px;
+}
+
+.date {
+  color: gray;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  .title-date {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 5px;
+  }
+
+  .content-description {
+    padding: 10px 0 10px 0;
+  }
+}
