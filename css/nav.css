@@ -182,11 +182,15 @@ nav {
     padding: 20px;
     max-width: 1350px;
   }
-
   .logo {
-    width: 200px;
+    max-width: 200px;
+    height: auto;
   }
 
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
   .nav-links {
     display: flex;
     flex-direction: column;
