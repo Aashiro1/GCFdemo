@@ -4,7 +4,14 @@
   box-sizing: border-box;
   font-family: montserrat;
 }
-
+html{
+ height: 100%;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .ribbon {
   display: flex;
   height: auto;
@@ -96,7 +103,7 @@
   margin: auto;
   margin-top: 40px;
   padding: 0 6rem;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .photocontainer .heading {
@@ -144,6 +151,10 @@
 .pastActivitiesLink {
   text-decoration: none;
   cursor: pointer;
+}
+.footerbox{
+  margin-top: auto;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
