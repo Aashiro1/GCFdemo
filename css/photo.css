@@ -1,17 +1,10 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: montserrat;
-} */
-html{
-  /* height: 100%; */
 }
-body{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+
 .ribbon {
   display: flex;
   height: auto;
@@ -171,6 +164,3 @@ body{
   opacity: 0;
   transform: translateY(8rem);
 } */
-footer{
-margin-top: auto;
-}
