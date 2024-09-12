@@ -3,7 +3,7 @@
 window.addEventListener("scroll", function () {
   var nav = document.querySelector("nav");
 
-  nav.classList.toggle("sticky", window.scrollY > 300);
+  nav.classList.toggle("sticky", window.scrollY > 200);
 });
 
 // burger
